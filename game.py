@@ -13,7 +13,7 @@ LIVES_LOCATION = Point((5),HEIGHT-245)
 class Corgi:
     def __init__(self):
         pyxel.init(WIDTH,HEIGHT,caption="Corgi",fps=40)
-        self.assetes = pyxel.load("resources.pyxel")
+        pyxel.load("resources.pyxel")
         self.lives = 3
         self.velocity = 0
         self.jump = False
